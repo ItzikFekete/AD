@@ -9,7 +9,8 @@ namespace AD.Models
     public class FavouriteColours
     {
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public  int FcId { get; set; }
+        public  int PersonId { get; set; }
+        public int ColourId { get; set; }
 
         public virtual ICollection<Colours>Colours { get; set; }
     }

@@ -16,7 +16,7 @@ namespace AD.DAL
         }
         public DbSet<People> Peoples { get; set; }
         public DbSet<Colours> Colours { get; set; }
-        public DbSet<FavouriteColours> favouriteColours { get; set; }
+        public DbSet<FavouriteColours> FavouriteColours { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
