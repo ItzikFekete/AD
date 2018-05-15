@@ -5,6 +5,9 @@ using System.Web;
 using AD.Models;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using System.Text;
+using System.Threading.Tasks;
+
 
 namespace AD.DAL
 {

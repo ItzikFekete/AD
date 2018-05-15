@@ -35,7 +35,30 @@ namespace AD.DAL
             };
             colours.ForEach(p => context.Colours.Add(p));
             context.SaveChanges();
-
+            var favColours = new List<FavouriteColours> {
+                new FavouriteColours { PersonId=1, ColourId=1},
+                new FavouriteColours { PersonId=1, ColourId=2}, 
+                new FavouriteColours { PersonId=1, ColourId=3}, 
+                new FavouriteColours { PersonId=2, ColourId=1},
+                new FavouriteColours { PersonId=2, ColourId=2},
+                new FavouriteColours { PersonId=2, ColourId=3},
+                new FavouriteColours { PersonId=3, ColourId=2},
+                new FavouriteColours { PersonId=4, ColourId=1},
+                new FavouriteColours { PersonId=4, ColourId=2},
+                new FavouriteColours { PersonId=4, ColourId=3},
+                new FavouriteColours { PersonId=5, ColourId=2}, 
+                new FavouriteColours { PersonId=6, ColourId=1},
+                new FavouriteColours { PersonId=7, ColourId=2},
+                new FavouriteColours { PersonId=7, ColourId=3},
+                new FavouriteColours { PersonId=8, ColourId=2},
+                new FavouriteColours { PersonId=9, ColourId=1},
+                new FavouriteColours { PersonId=10, ColourId=1},
+                new FavouriteColours { PersonId=10, ColourId=2},
+                new FavouriteColours { PersonId=10, ColourId=3},
+                new FavouriteColours { PersonId=11, ColourId=1}
+            };
+            favColours.ForEach(p => context.FavouriteColours.Add(p));
+            context.SaveChanges();
         }
     }
 }
